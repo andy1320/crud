@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+     <definition name="base1.definition"
+		template="/WEB-INF/views3/layout3.jsp">
+		<put-attribute name="title" value="lalalal" />
+		<put-attribute name="header" value="/WEB-INF/views3/header.jsp" />
+		<put-attribute name="navbar" value="/WEB-INF/views3/navbar.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views3/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views3/footer.jsp" />
+	</definition>
+	<definition name="index" extends="base1.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views3/index.jsp" />
+	</definition>
+	
+
+	<definition name="base.definition"
+		template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value="hahahahah" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="scrollayer" value="/WEB-INF/views/scrollayer.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+		
+	</definition>
+
+	<definition name="regester" extends="base.definition">
+		<put-attribute name="title" value="Contact Manager" />
+		<put-attribute name="body" value="/WEB-INF/views/regester.jsp" />
+	</definition>
+	
+	<definition name="details" extends="base.definition">
+		<put-attribute name="title" value="Contact Manager" />
+		<put-attribute name="body" value="/WEB-INF/views/details.jsp" />
+	</definition>
+	<definition name="welcome" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/welcome.jsp" />
+	</definition>
+	<definition name="Groups" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/Groups.jsp" />
+	</definition>
+	<definition name="online" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/online.jsp" />
+	</definition>
+	<definition name="indexpage" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/indexpage.jsp" />
+	</definition>
+
+	<definition name="edit" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/views/edit.jsp" />
+	</definition>
+	
+	<definition name="base2.definition"
+		template="/WEB-INF/views1/layout1.jsp">
+		<put-attribute name="title" value="nananana" />
+		<put-attribute name="header" value="/WEB-INF/views1/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views1/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views1/footer.jsp" />
+	</definition>
+	<definition name="regester1" extends="base2.definition">
+		<put-attribute name="title" value="Contact Manager" />
+		<put-attribute name="body" value="/WEB-INF/views1/regester1.jsp" />
+	</definition>
+	<definition name="details1" extends="base2.definition">
+		<put-attribute name="title" value="Contact Manager" />
+		<put-attribute name="body" value="/WEB-INF/views1/details1.jsp" />
+	</definition>
+	
+	<definition name="base3.definition"
+		template="/WEB-INF/views2/layout2.jsp">
+		<put-attribute name="title" value="yayayayay" />
+		<put-attribute name="header" value="/WEB-INF/views2/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views2/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views2/footer.jsp" />
+	</definition>
+
+	<definition name="details2" extends="base3.definition">
+		<put-attribute name="title" value="Contact Manager" />
+		<put-attribute name="body" value="/WEB-INF/views2/details2.jsp" />
+	</definition>
+	
+	
+
+</tiles-definitions>
